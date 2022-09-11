@@ -13,7 +13,7 @@ function App() {
 		localStorage.setItem('pacientes', JSON.stringify(pacientes));
 	}, [pacientes]);
 
-	//Eliminamos pacientes agendados
+	//Eliminamos pacientes
 	const eliminarPaciente = (id) => {
 		const pacientesActualizados = pacientes.filter(
 			(paciente) => paciente.id !== id
